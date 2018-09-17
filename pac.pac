@@ -11,6 +11,7 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto switch", {
     "+auto switch": function(url, host, scheme) {
         "use strict";
+        if (/(?:^|\.)ajax\.googleapis\.com$/.test(host)) return "+vpn";
         if (/(?:^|\.)chrome\.com$/.test(host)) return "+vpn";
         if (/(?:^|\.)sex8\.cc$/.test(host)) return "+vpn";
         if (/(?:^|\.)fbcdn\.net$/.test(host)) return "+vpn";
