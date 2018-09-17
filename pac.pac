@@ -51,6 +51,6 @@ var FindProxyForURL = function(init, profiles) {
     "+vpn": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
-        return "SOCKS5 127.0.0.1:8090; SOCKS 127.0.0.1:8090";
+        return "SOCKS5 172.16.3.57:8090; SOCKS 172.16.3.57:8090";
     }
 });
