@@ -54,6 +54,7 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
         //return "SOCKS5 172.16.3.57:8090; SOCKS 172.16.3.57:8090";
-        return "SOCKS5 ppprice.serveo.net:8090; SOCKS ppprice.serveo.net:8090";
+        //return "SOCKS5 ppprice.serveo.net:8090; SOCKS ppprice.serveo.net:8090";
+        return "SOCKS5 150.109.40.218:8090; SOCKS 150.109.40.218:8090";
     }
 });
